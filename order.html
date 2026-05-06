@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>فلاحي - الطلبات</title>
+    <style>
+        body { background-color: #121212; color: white; font-family: sans-serif; padding: 20px; }
+        table { width: 100%; border-collapse: collapse; background: #1e1e1e; }
+        th, td { padding: 12px; border: 1px solid #333; text-align: center; }
+        th { background: #ffff00; color: #000; }
+        .btn { padding: 5px 15px; cursor: pointer; font-weight: bold; transition: 0.2s; border: none; border-radius: 4px; }
+        .btn:active { transform: translateY(-15px); } /* الحركة اللي طلبتها (تطلع لفوق) */
+        .accept { background: #00ff00; }
+        .reject { background: #ff4d4d; color: white; }
+    </style>
+</head>
+<body>
+    <a href="home.html" style="color: #ffff00;">⬅ العودة</a>
+    <h1 style="text-align: center; color: #ffff00;">📋 لستة الطلبات (6 طلبات)</h1>
+    <table>
+        <tr><th>الفلاح</th><th>المعدة</th><th>الحالة</th><th>إجراء</th></tr>
+        <tr><td>محمد تامر</td><td>جرار</td><td>انتظار</td><td><button class="btn accept">قبول</button> <button class="btn reject">رفض</button></td></tr>
+        <tr><td>عزت حسن</td><td>حصادة</td><td>انتظار</td><td><button class="btn accept">قبول</button> <button class="btn reject">رفض</button></td></tr>
+        <tr><td>عبدالله محمد</td><td>محراث</td><td>انتظار</td><td><button class="btn accept">قبول</button> <button class="btn reject">رفض</button></td></tr>
+        <tr><td>احمد مجدي</td><td>ماكينة ري</td><td>انتظار</td><td><button class="btn accept">قبول</button> <button class="btn reject">رفض</button></td></tr>
+        <tr><td>معاذ اسامه</td><td>مقطورة</td><td>انتظار</td><td><button class="btn accept">قبول</button> <button class="btn reject">رفض</button></td></tr>
+        <tr><td>اشرف السيد</td><td>دراس</td><td>انتظار</td><td><button class="btn accept">قبول</button> <button class="btn reject">رفض</button></td></tr>
+    </table>
+</body>
+</html>

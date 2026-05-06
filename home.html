@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <style>
+        .card, .ascom11 { 
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .card:hover, .ascom11:hover {
+            transform: translateY(-10px); 
+            box-shadow: 0 10px 20px rgba(255, 215, 0, 0.3); 
+        }
+
+        img {
+            transition: transform 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.05); 
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فلاحي - الصفحة الرئيسية</title>
+    <style>
+     
+        body {
+            background-color: #121212;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        
+        header {
+            background: #1e1e1e;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 3px solid #ffff00;
+        }
+
+        @keyframes wiggle {
+            0%, 100% { transform: rotate(-3deg); }
+            50% { transform: rotate(3deg); }
+        }
+
+        .orders-btn {
+            background: #ffff00;
+            color: black;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-weight: bold;
+            animation: wiggle 2s infinite ease-in-out;
+        }
+
+        
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 40px;
+        }
+
+        .card {
+            background: #1e1e1e;
+            border: 1px solid #333;
+            border-radius: 15px;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .card img {
+            width: 100%;
+            height: 150px;
+            border-radius: 10px;
+            object-fit: cover;
+            background: #333; /* لون احتياطي لو الصورة محملتش */
+        }
+
+        .card h3 { color: #ffff00; }
+        .price { color: #00ff00; font-weight: bold; }
+
+        
+        .footer-info {
+            background: #1e1e1e;
+            padding: 30px;
+            margin-top: 50px;
+            text-align: center;
+            border-top: 1px solid #333;
+        }
+
+        .contact-box {
+            display: inline-block;
+            margin: 10px;
+            padding: 15px;
+            border: 1px dashed #ffff00;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>فلاحي 🚜</h1>
+        <a href="order.html" class="orders-btn">📋 لوحة الطلبات</a>
+    </header>
+
+    <div class="container">
+        <div class="card">
+            <img src="car1.jpeg" alt="جرار">
+            <h3>جرار نيوهولاند</h3>
+            <p class="price">500 ج / يوم</p>
+        </div>
+
+        <div class="card">
+            <img src="car4.jpeg" alt="حصادة">
+            <h3>حصادة قمح</h3>
+            <p class="price">1500 ج / يوم</p>
+        </div>
+
+        <div class="card">
+            <img src="car2.jpeg" alt="محراث">
+            <h3>محراث آلي</h3>
+            <p class="price">300 ج / يوم</p>
+        </div>
+
+        <div class="card">
+            <img src="car3.jpeg" alt="مقطورة">
+            <h3>مقطورة نقل</h3>
+            <p class="price">400 ج / يوم</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1589923188900-85dae523342b?w=300" alt="حاصدة بنجر">
+            <h3>حاصدة بنجر</h3>
+            <p class="price">2000 ج / يوم</p>
+        </div>
+
+        <div class="card">
+            <img src="car5.jpeg" alt="ماكينة ري">
+            <h3>ماكينة ري</h3>
+            <p class="price">250 ج / يوم</p>
+        </div>
+    </div>
+
+    <div class="footer-info">
+        <h2>📞 خدمة العملاء</h2>
+        <div class="contact-box">
+            <p>واتساب: 01009387166</p>
+        </div>
+        <div class="contact-box">
+            <p>إيميل: medotamer885@gmail.com</p>
+        </div>
+        <p style="margin-top: 20px; color: #555;">جميع الحقوق محفوظة لموقع فلاحي &copy; 2026</p>
+    </div>
+
+</body>
+</html>
